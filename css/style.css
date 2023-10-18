@@ -11,6 +11,22 @@ Reset
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /*
 ******
 Typography
@@ -21,11 +37,12 @@ Typography
   --black: #000000;
   --white: #ffffff;
   --lightgrey: #d2d2d2;
-  --dimgray: #717171;
+  --dimgray: #6d6d6d;
   --gray: #808080;
   --blackrussian: #080b12;
   --blackrussianbody: #141922;
   --nero: #282828;
+  --greenyellow: #adff2f;
 }
 
 /*
@@ -40,11 +57,196 @@ Common
 ******
 */
 
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
 /*
 ******
 Body
 ******
 */
+
+.main {
+  background-color: #141922;
+}
+
+.main.container .navbar {
+  background-color: var(--black);
+  height: calc(100vh - 90px);
+  width: 230px;
+  padding: 20px 20px 10px 20px;
+}
+
+.main.container .navbar a {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--dimgray);
+}
+
+/* Logo */
+.main.container .navbar .top-menu .logo-spotify {
+  width: 130px;
+}
+
+.main.container .navbar .top-menu .logo-spotify .small-logo {
+  display: none;
+}
+
+.main.container .navbar .top-menu .logo-spotify img {
+  width: 100%;
+}
+
+/* Top menu */
+.main.container .navbar .top-menu .nav-menu .element-list {
+  gap: 9px;
+  margin-top: 30px;
+}
+
+/* colore home */
+.main.container .navbar .top-menu .nav-menu .element-list li .element-reveal {
+  color: var(--white);
+}
+
+.main.container .navbar .top-menu .nav-menu .element-list img {
+  opacity: 0.7;
+  width: 26px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main.container .navbar .top-menu .menu-playlist {
+  margin-top: 22px;
+}
+
+.main .navbar .put-playlist {
+  margin-top: 8px;
+}
+
+/* icona playlist */
+.main .navbar .put-playlist i {
+  color: var(--white);
+  vertical-align: middle;
+  font-size: 36px;
+  margin-right: 7px;
+  opacity: 0.7;
+}
+
+/* colore playlist */
+.titolo-playlist {
+  color: white;
+}
+
+.main.container .navbar .top-menu .menu-playlist .playlist-list {
+  margin-top: 15px;
+  gap: 16px;
+  overflow-y: auto;
+  height: calc(100vh - 460px);
+  min-height: 100px;
+}
+
+.playlist-list li {
+  padding: 5px 0;
+}
+
+.main.container .navbar .top-menu .menu-playlist .playlist-list li span {
+  font-size: 13px;
+}
+
+.main.container .navbar .bottom-menu .profile-menu .app {
+  margin-top: 9px;
+}
+
+.main.container .navbar .bottom-menu .profile-menu .app img {
+  opacity: 0.7;
+  width: 13px;
+  margin-right: 11px;
+}
+
+.main.container .navbar .bottom-menu .profile-menu hr {
+  margin-top: 9px;
+  margin-bottom: 13px;
+  border-color: var(--dimgray);
+}
+
+.main.container .navbar .bottom-menu .profile-menu .person .username {
+  color: var(--white);
+  font-size: 13px;
+}
+
+.main.container .navbar .bottom-menu .profile-menu .person .picture-container {
+  background-color: var(--dimgray);
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  overflow: hidden;
+}
+
+.main.container
+  .navbar
+  .bottom-menu
+  .profile-menu
+  .person
+  .picture-container
+  img {
+  object-fit: cover;
+}
+
+.nav {
+  position: relative;
+}
+
+/* Footer-sidebar */
+.footer-navbar {
+  background-color: black;
+  position: absolute;
+  bottom: 100px;
+  padding: 20px 0 10px 20px;
+}
+
+.footer-navbar .installa {
+  color: var(--dimgray);
+  padding: 10px;
+  border-bottom: 1px solid var(--dimgray);
+}
+
+.footer-navbar .utente {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footer-navbar .cont-foto {
+  width: 30px;
+  height: 30px;
+  background-color: var(--dimgray);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.footer-navbar .cont-foto img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-navbar .utente span {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 10px;
+}
 
 /*
 ******
@@ -58,8 +260,65 @@ Main
 ******
 */
 
+.content {
+  margin-left: 230px;
+}
+
+.aggiornamento {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 0;
+  text-align: right;
+  position: fixed;
+  right: 0;
+  left: 200px;
+  height: 100px;
+}
+
 /*
 ******
 Footer
 ******
 */
+
+footer {
+  background-color: #282828;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-sx .album {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.cont-img {
+  width: 60px;
+  height: 60px;
+}
+
+.cont-img img {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 0 10px;
+}
+.info h3 {
+  font-size: 12px;
+}
+
+.info span {
+  font-size: 10px;
+  color: #848484;
+  font-weight: 600;
+}
+
+.icons i {
+  padding: 5px;
+  color: #848484;
+}
