@@ -1,0 +1,65 @@
+/*
+******
+Reset
+******
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+******
+Typography
+******
+*/
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --lightgrey: #d2d2d2;
+  --dimgray: #717171;
+  --gray: #808080;
+  --blackrussian: #080b12;
+  --blackrussianbody: #141922;
+  --nero: #282828;
+}
+
+/*
+******
+Debug
+******
+*/
+
+/*
+******
+Common
+******
+*/
+
+/*
+******
+Body
+******
+*/
+
+/*
+******
+Header
+******
+*/
+
+/*
+******
+Main
+******
+*/
+
+/*
+******
+Footer
+******
+*/
