@@ -322,3 +322,18 @@ footer {
   padding: 5px;
   color: #848484;
 }
+
+/*
+******
+Media Query
+******
+*/
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
