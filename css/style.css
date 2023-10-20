@@ -204,9 +204,69 @@ Body
   object-fit: cover;
 }
 
-.nav {
-  position: relative;
+/* <!-- Contenuto Top Bar--> */
+
+.content {
+  margin-left: 230px;
 }
+
+.aggiornamento {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 0;
+  text-align: right;
+  position: fixed;
+  right: 0;
+  left: 230px;
+  height: 100px;
+  z-index: 99;
+}
+
+.aggiornamento button {
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-right: 25px;
+}
+
+.aggiornamento button a {
+  color: white;
+  text-decoration: none;
+  word-spacing: 2px;
+  font-weight: 700;
+}
+
+/*
+******
+Header
+******
+*/
+
+/*
+******
+Main
+******
+*/
+
+.content {
+  margin-left: 230px;
+}
+
+.aggiornamento {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 0;
+  text-align: right;
+  position: fixed;
+  right: 0;
+  left: 200px;
+  height: 100px;
+}
+
+/*
+******
+Footer
+******
+*/
 
 /* Footer-sidebar */
 .footer-navbar {
@@ -248,37 +308,7 @@ Body
   padding: 0 10px;
 }
 
-/*
-******
-Header
-******
-*/
-
-/*
-******
-Main
-******
-*/
-
-.content {
-  margin-left: 230px;
-}
-
-.aggiornamento {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 0;
-  text-align: right;
-  position: fixed;
-  right: 0;
-  left: 200px;
-  height: 100px;
-}
-
-/*
-******
-Footer
-******
-*/
+/* Footer Sinistra */
 
 footer {
   background-color: #282828;
@@ -322,6 +352,108 @@ footer {
   padding: 5px;
   color: #848484;
 }
+
+/* /Footer Sinistra */
+
+/* <!-- Footer centro --> */
+
+.footer-centro {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.footer-centro .controls {
+  margin-bottom: 10px;
+}
+
+.footer-centro .controls i {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-centro .controls i:nth-child(3) {
+  font-size: 30px;
+}
+
+.footer-centro .timesong {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.footer-centro .timesong span {
+  font-size: 10px;
+}
+
+.footer-centro .timesong .linea {
+  background-color: #7d7f84;
+  border: 1px solid #7d7f84;
+  width: 90%;
+  height: 3px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  height: 5px;
+  align-items: center;
+  border: none;
+}
+
+.footer-centro .timesong .linea .scrollsong {
+  border: 1px solid white;
+  background-color: white;
+  width: 20%;
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* /Footer Centro */
+
+/* Footer Destra */
+
+.footer-dx > * {
+  padding: 0 15px;
+}
+
+.footer-dx {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  color: var(--white);
+  padding: 0 15px;
+}
+
+.footer-dx .timesong {
+  width: 100%;
+}
+
+.footer-dx .timesong .linea {
+  width: 90%;
+  height: 3px;
+  background-color: #7d7f84;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.footer-dx .timesong .linea .scrollsong {
+  width: 30%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: var(--white);
+  border: 1px solid white;
+}
+
+/* <!-- Footer destra --> */
 
 /*
 ******
