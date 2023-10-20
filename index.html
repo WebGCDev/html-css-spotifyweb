@@ -16,12 +16,13 @@
     <!-- /Favicon -->
 
     <!-- Font Google Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- /Font Google Montserrat -->
 
     <!-- Font Awesome -->
@@ -38,159 +39,233 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- /Foglio stile Css -->
   </head>
-
   <body>
-
     <main>
+      <!-- BARRA-LATERALE -->
+      <div class="barra-laterale">
+        <img id="logo-big" src="img/logo.svg" alt="logo-big" />
+        <img id="logo-small" src="img/logo-small.svg" alt="logo-small" />
+        <!-- MENU BARRA-LATERALE -->
+        <div class="menu">
+          <ul>
+            <li class="elem-menu-barra-laterale">
+              <img src="img/home.svg" alt="Home" />
+              <span>Home</span>
+            </li>
+            <li class="elem-menu-barra-laterale">
+              <img src="img/search.svg" alt="Search" />
+              <span>Cerca</span>
+            </li>
+            <li class="elem-menu-barra-laterale">
+              <img src="img/libreria.svg" alt="Libreria-Personale" />
+              <span>La tua libreria</span>
+            </li>
+          </ul>
+        </div>
+        <!-- MUSIC IN PLAY -->
+
+        <div class="playlist">
+          <h4>Playlist</h4>
+          <div class="crea-playlist">
+            <i class="fa-solid fa-square-plus"></i>
+            <span>Crea Playlist</span>
+          </div>
+          <ul>
+            <li>Queen</li>
+            <li>Dream Theater</li>
+            <li>U2</li>
+            <li>Dire Straits</li>
+            <li>Led Zeppelin</li>
+            <li>Pink Floyd</li>
+            <li>Guns N'Roses</li>
+          </ul>
+        </div>
+        <!-- FOOTER BARRA-LATERALE -->
+
+        <div class="footer-barra-laterale">
+          <div class="installa">
+            <i class="fa-regular fa-circle-down"></i>
+            <span>Installa App</span>
+          </div>
+          <hr />
+          <div class="profilo">
+            <div class="foto-profilo">
+              <img src="img/profile.svg" alt="img-profilo" />
+            </div>
+            <span>Gaetano Chiapparino</span>
+          </div>
+        </div>
+      </div>
 
       <!-- Contenuto Top Bar-->
       <div class="content">
-          <div class="aggiornamento">
-            <button>
-              <a href="#">EFFETTUA L'UPGRADE</a>
-            </button>
-          </div>
+        <div class="aggiornamento">
+          <button>
+            <a href="#">EFFETTUA L'UPGRADE</a>
+          </button>
         </div>
+        <!-- BARRA NAV-SELEZIONE -->
 
-
-<!-- navbvar principale -->
-       <!-- <nav>
-        <ul>
-          <li class="selected">IN EVIDENZA</li>
-          <li>PODCAST</li>
-          <li>CLASSIFICHE</li>
-          <li>GENERI E MOOD</li>
-          <li>NUOVE USCITE</li>
-          <li>SCOPRI</li>
-        </ul>
-       </nav> -->
-
-
-
-
-
-
-
-        <!-- /Contenuto Top Bar-->
-      
-      
-
-      <div class="main container flex">
-        <nav class="navbar flex column space-between">
-          <div class="top-menu flex column">
-            <div class="logo-spotify">
-              <img class="big-logo" src="img/logo.svg" alt="Logo Spotify">
-              <img class="small-logo" src="img/logo-small.svg" alt="Logo Spotify Small">
-            </div>
-          <div class="nav-menu">
-            <ul class="element-list flex column">
-              <li class="flex align-center">
-                <img src="img/home.svg" alt="Icona Home">
-                <a href="#" class="element-reveal">Home</a>
-                <div class="makeup"></div>
-              </li>
-              <li class="flex align-center">
-                <img src="img/search.svg" alt="Icona Search">
-                <a href="#">Cerca</a>
-              </li>
-              <li class="flex align-center">
-                <img src="img/libreria.svg" alt="Icona Home">
-                <a href="#">La tua Libreria</a>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-playlist" ></div>
-          <span class="titolo-playlist" >PLAYLIST</span>
-
-          <div class="put-playlist">
-            <i class="fa-solid fa-square-plus"></i>
-            <a href="#">Crea Playlist</a>
-          </div>
-
-          
-
-          <ul class="playlist-list flex column">
-            <li><a href="#">Queen</a></li>
-            <li><a href="#">Dream Theater</a></li>
-            <li><a href="#">U2</a></li>
-            <li><a href="#">Dire Straits </a></li>
-            <li><a href="#">Led Zeppelin</a></li>
-            <li><a href="#">Pink Floyd</a></li>
-            <li><a href="#">Guns N'Roses</a></li>
+        <nav>
+          <ul>
+            <li class="selected">IN EVIDENZA</li>
+            <li>PODCAST</li>
+            <li>CLASSIFICHE</li>
+            <li>GENERI E MOOD</li>
+            <li>NUOVE USCITE</li>
+            <li>SCOPRI</li>
           </ul>
-          </div>
-          </div>
-          
-          
-
-          <!-- footer navbar -->
-          <div class="footer-navbar">
-            <div class="installa">
-              <i class="fa-regular fa-circle-down"></i>
-              <span>Installa App</span>
-            </div>
-            <div class="utente">
-              <div class="cont-foto">
-                <img src="img/profile.svg" alt="img-profilo">
-              </div>
-              <span>Gaetano Chiapparino</span>
-            </div>
-          </div>
         </nav>
 
-       
-
-        </main>
-
-    
-  <!-- Footer -->
-   <footer>
-    <!-- Footer sinistra -->
-    <div class="footer-sx">
-      <div class="album">
-        <div class="cont-img">
-          <img src="img/sinister.jpeg" alt="Copertina Album Sinister">
+        <!-- MUSICA ASCOLTATA DI RECENTE -->
+        <div class="last-view">
+          <h2>Recently played</h2>
+          <div class="cont-last-view">
+            <div class="box">
+              <div class="cont-i">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/metal_lifting.jpg" alt="Metal Lifting" />
+              </div>
+              <h4>Heavy Metal</h4>
+              <h5>Subtitle</h5>
+            </div>
+            <div class="box">
+              <div class="cont-i">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/stranger.jpeg" alt="Stranger Things" />
+              </div>
+              <h4>
+                Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
+              </h4>
+              <h5>Kyle Dixon & Michael Stein</h5>
+            </div>
+            <div class="box">
+              <div class="cont-i">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/aquietplace.jpeg" alt="A Quiet Place" />
+              </div>
+              <h4>A Quiet Place</h4>
+              <h5>Subtitle</h5>
+            </div>
+            <div class="box">
+              <div class="cont-i">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img\/split.jpeg" alt="Split" />
+              </div>
+              <h4>Split</h4>
+              <h5>Subtitle</h5>
+            </div>
+            <div class="box">
+              <div class="cont-i">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/cure.jpeg" alt="A Cure For Wellness" />
+              </div>
+              <h4>A Cure for Wellness</h4>
+              <h5>Subtitle</h5>
+            </div>
+            <div class="box">
+              <div class="cont-i">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/sinister.jpeg" alt="recenti6" />
+              </div>
+              <h4>Sinister</h4>
+              <h5>Subtitle</h5>
+            </div>
+          </div>
         </div>
-        <div class="info">
-          <h3>Sinister</h3>
-          <span>My Sick Piano</span>
+        <!-- PERSONAL PAGE -->
+
+        <div class="create-new">
+          <h2>Creato per Gaetano Chiapparino</h2>
+          <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+          <div class="album-for-you">
+            <div class="box">
+              <div class="cont-i">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/radar.jpeg" alt="creato-per-1" />
+              </div>
+              <h4>Release Radar</h4>
+            </div>
+            <div class="box">
+              <div class="cont-i">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/mixdaily.jpeg" alt="creato-per-2" />
+              </div>
+              <h4>Daily Mix 1</h4>
+            </div>
+          </div>
+        </div>
+        <!-- SELECT ARTISTS -->
+        <div class="artists">
+          <h2>Artisti più popolari</h2>
+          <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+          <div class="album-for-you">
+            <div class="box">
+              <div class="cont-i-cerchio">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/youg.jpeg" alt="artist1" />
+              </div>
+              <h4>Lana del Rey</h4>
+            </div>
+            <div class="box">
+              <div class="cont-i-cerchio">
+                <i class="fa-regular fa-circle-play"></i>
+                <img src="img/einaudi.jpeg" alt="artist2" />
+              </div>
+              <h4>Ludovico Einaudi</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- Footer sx -->
+      <div class="footer-sx">
+        <div class="album">
+          <div class="cont-img">
+            <img src="img/sinister.jpeg" alt="Copertina Album Sinister" />
+          </div>
+          <div class="info">
+            <h3>Sinister</h3>
+            <span>My Sick Piano</span>
+          </div>
         </div>
         <div class="icons">
           <i class="fa-regular fa-heart"></i>
           <i class="fa-regular fa-folder"></i>
         </div>
       </div>
-    </div>
-     <!-- Footer centro -->
-    <div class="footer-centro">
-      <div class="controls">
-        <i class="fa-solid fa-shuffle"></i>
+      <!-- Footer centro -->
+      <div class="footer-centro">
+        <div class="controls">
+          <i class="fa-solid fa-shuffle"></i>
           <i class="fa-solid fa-backward-step"></i>
           <i class="fa-regular fa-circle-play"></i>
           <i class="fa-solid fa-forward-step"></i>
           <i class="fa-solid fa-arrow-rotate-right"></i>
-      </div>
-      <div class="timesong">
-        <span>0:25</span>
-        <div class="linea">
-          <div class="scrollsong"></div>
         </div>
-        <span>4:35</span>
+        <div class="timesong">
+          <span>0:25</span>
+          <div class="linea">
+            <div class="scrollsong"></div>
+          </div>
+          <span>4:35</span>
+        </div>
       </div>
-    </div>
 
-     <!-- Footer destra -->
-    <div class="footer-dx">
-      <i class="fa-solid fa-bars"></i>
-      <i class="fa-solid fa-desktop"></i>
-      <i class="fa-solid fa-volume-high"></i>
-      <div class="timesong">
-        <div class="linea">
-          <div class="scrollsong"></div>
+      <!-- Footer dx -->
+      <div class="footer-dx">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <div class="timesong">
+          <div class="linea">
+            <div class="scrollsong"></div>
+          </div>
         </div>
       </div>
-    </div>
-   </footer> 
-   <!-- /Footer Finito -->
-</body>
+    </footer>
+    <!-- /Footer Finito -->
+  </body>
 </html>

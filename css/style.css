@@ -13,10 +13,13 @@ Reset
 
 body {
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blackrussianbody);
 }
 
-img {
-  display: block;
+.barra-laterale {
+  color: var(--white);
 }
 
 a {
@@ -57,20 +60,8 @@ Common
 ******
 */
 
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
+.barra-laterale #logo-small {
+  display: none;
 }
 
 /*
@@ -79,138 +70,172 @@ Body
 ******
 */
 
-.main {
-  background-color: #141922;
+nav {
+  margin: 0 auto;
+  height: 150px;
+  width: 600px;
+  padding-top: 120px;
 }
 
-.main.container .navbar {
-  background-color: var(--black);
-  height: calc(100vh - 90px);
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav ul li {
+  color: #7d7f84;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/*
+******
+Main
+******
+*/
+
+/* BARRA LATERALE */
+
+.barra-laterale {
+  flex-direction: column;
   width: 230px;
-  padding: 20px 20px 10px 20px;
+  background-color: black;
+  position: fixed;
+  height: calc(100vh - 100px);
+  display: flex;
 }
 
-.main.container .navbar a {
-  font-size: 0.75rem;
-  font-weight: bold;
+.barra-laterale #logo-big {
+  padding: 30px 80px 0 20px;
+  display: block;
+  width: 250px;
+}
+
+.barra-laterale .menu ul {
+  margin-top: 40px;
+}
+
+.barra-laterale .menu ul li {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 15px 20px;
+}
+
+.barra-laterale.menu ul li img {
+  width: 10%;
+  height: auto;
+  display: block;
+}
+
+.barra-laterale .menu ul li span {
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 700;
   color: var(--dimgray);
 }
 
-/* Logo */
-.main.container .navbar .top-menu .logo-spotify {
-  width: 130px;
+/*PLAYLIST */
+
+.playlist {
+  width: 80%;
+  margin: 0 auto;
+  flex-grow: 1;
 }
 
-.main.container .navbar .top-menu .logo-spotify .small-logo {
-  display: none;
+.playlist h4 {
+  margin-top: 10px;
 }
 
-.main.container .navbar .top-menu .logo-spotify img {
-  width: 100%;
+.crea-playlist {
+  margin-top: 10px;
 }
 
-/* Top menu */
-.main.container .navbar .top-menu .nav-menu .element-list {
-  gap: 9px;
-  margin-top: 30px;
-}
-
-/* colore home */
-.main.container .navbar .top-menu .nav-menu .element-list li .element-reveal {
-  color: var(--white);
-}
-
-.main.container .navbar .top-menu .nav-menu .element-list img {
-  opacity: 0.7;
-  width: 26px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.main.container .navbar .top-menu .menu-playlist {
-  margin-top: 22px;
-}
-
-.main .navbar .put-playlist {
-  margin-top: 8px;
-}
-
-/* icona playlist */
-.main .navbar .put-playlist i {
-  color: var(--white);
+.crea-playlist i {
+  font-size: 40px;
   vertical-align: middle;
-  font-size: 36px;
-  margin-right: 7px;
-  opacity: 0.7;
+  color: var(--dimgray);
 }
 
-/* colore playlist */
-.titolo-playlist {
-  color: white;
+.crea-playlist span {
+  vertical-align: middle;
+  margin-left: 10px;
+  font-weight: 700;
+  color: var(--dimgray);
 }
 
-.main.container .navbar .top-menu .menu-playlist .playlist-list {
+.playlist ul {
   margin-top: 15px;
-  gap: 16px;
-  overflow-y: auto;
-  height: calc(100vh - 460px);
-  min-height: 100px;
+  max-height: 150px;
+  overflow-y: scroll;
 }
 
-.playlist-list li {
-  padding: 5px 0;
+.playlist ul li {
+  text-align: left;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dimgray);
 }
 
-.main.container .navbar .top-menu .menu-playlist .playlist-list li span {
-  font-size: 13px;
+/* BARRA LATERALE FOOTER */
+
+.footer-barra-laterale {
+  padding: 20px 0 10px 20px;
+  bottom: 100px;
+  background-color: black;
 }
 
-.main.container .navbar .bottom-menu .profile-menu .app {
-  margin-top: 9px;
+.footer-barra-laterale .installa {
+  color: var(--dimgray);
+  padding-bottom: 10px;
 }
 
-.main.container .navbar .bottom-menu .profile-menu .app img {
-  opacity: 0.7;
-  width: 13px;
-  margin-right: 11px;
+hr {
+  width: 190px;
+  margin-top: 3px;
+  border-color: var(--bg-grigio-nav);
 }
 
-.main.container .navbar .bottom-menu .profile-menu hr {
-  margin-top: 9px;
-  margin-bottom: 13px;
-  border-color: var(--dimgray);
+.footer-barra-laterale .profilo {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.main.container .navbar .bottom-menu .profile-menu .person .username {
-  color: var(--white);
-  font-size: 13px;
-}
-
-.main.container .navbar .bottom-menu .profile-menu .person .picture-container {
-  background-color: var(--dimgray);
-  margin-right: 10px;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
+.footer-barra-laterale .foto-profilo {
+  background-color: #6e6e6e;
   overflow: hidden;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
-.main.container
-  .navbar
-  .bottom-menu
-  .profile-menu
-  .person
-  .picture-container
-  img {
+.footer-barra-laterale img {
+  width: 100%;
   object-fit: cover;
 }
 
-/* <!-- Contenuto Top Bar--> */
+.footer-barra-laterale span {
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* --------------------------------------- */
+/* AGGIORNAMENTO REVERT NON COMMIT */
 
 .content {
   margin-left: 230px;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  padding-bottom: 100px;
 }
 
 .aggiornamento {
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 30px 0;
   text-align: right;
@@ -218,7 +243,6 @@ Body
   right: 0;
   left: 230px;
   height: 100px;
-  z-index: 99;
 }
 
 .aggiornamento button {
@@ -236,6 +260,102 @@ Body
   font-weight: 700;
 }
 
+.last-view {
+  margin: 30px auto 0;
+  width: 98%;
+}
+
+.last-view h2 {
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.cont-last-view {
+  display: flex;
+  width: 100%;
+}
+
+.box {
+  width: calc(100% / 6);
+  padding: 0 0.5vw;
+  text-align: center;
+}
+
+.cont-i,
+.cont-i-cerchio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1vh;
+}
+
+.box .cont-i i,
+.box .cont-i-cerchio i {
+  position: absolute;
+  color: white;
+  font-size: 72px;
+  display: none;
+  z-index: 1;
+}
+
+.box img {
+  width: 100%;
+  display: block;
+}
+
+.box h4 {
+  color: white;
+  margin-bottom: 1vh;
+  font-size: 14px;
+}
+
+.box h5 {
+  color: var(--dimgray);
+  font-size: 10px;
+}
+
+.create-new {
+  margin: 30px auto 0;
+  width: 98%;
+}
+
+.create-new h2 {
+  color: var(--white);
+  margin: 50px 0 10px;
+}
+
+.create-new h5 {
+  color: #7d7f84;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.album-for-you {
+  width: 100%;
+  display: flex;
+}
+
+.artists {
+  margin: 30px auto 0;
+  width: 98%;
+}
+
+.artists h2 {
+  color: white;
+  margin: 50px 0 10px;
+}
+
+.artists h5 {
+  color: var(--dimgray);
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.artists .box img {
+  border-radius: 50%;
+}
+
 /*
 ******
 Header
@@ -244,31 +364,11 @@ Header
 
 /*
 ******
-Main
-******
-*/
-
-.content {
-  margin-left: 230px;
-}
-
-.aggiornamento {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 0;
-  text-align: right;
-  position: fixed;
-  right: 0;
-  left: 200px;
-  height: 100px;
-}
-
-/*
-******
 Footer
 ******
 */
 
-/* Footer-sidebar */
+/* Footer-Principale */
 .footer-navbar {
   background-color: black;
   position: absolute;
@@ -311,51 +411,66 @@ Footer
 /* Footer Sinistra */
 
 footer {
-  background-color: #282828;
-  height: 90px;
+  height: 100px;
+  background-color: var(--nero);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 1;
+  z-index: 3;
+}
+
+.footer-sx {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-left: 10px;
+  color: white;
+  width: 20%;
 }
 
 .footer-sx .album {
   display: flex;
-  align-items: center;
-  color: white;
 }
 
-.cont-img {
-  width: 60px;
-  height: 60px;
+.album .cont-img {
+  width: 50px;
+  height: 50px;
 }
 
-.cont-img img {
+.album img {
   width: 100%;
 }
 
-.info {
+.footer-sx .album .info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0 30px 0 10px;
 }
-.info h3 {
-  font-size: 12px;
-}
 
-.info span {
+.footer-sx .album .info span {
   font-size: 10px;
-  color: #848484;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--dimgray);
 }
 
-.icons i {
-  padding: 5px;
-  color: #848484;
+.footer-sx .icons {
+  display: flex;
+  width: 20%;
+  justify-content: left;
+  gap: 15px;
 }
 
-/* /Footer Sinistra */
+.footer-sx .icons i {
+  color: var(--dimgray);
+}
 
-/* <!-- Footer centro --> */
+/* FOOTER CENTRALE */
 
 .footer-centro {
   color: white;
@@ -415,8 +530,6 @@ footer {
   height: 100%;
 }
 
-/* /Footer Centro */
-
 /* Footer Destra */
 
 .footer-dx > * {
@@ -428,7 +541,6 @@ footer {
   align-items: center;
   width: 20%;
   color: var(--white);
-  padding: 0 15px;
 }
 
 .footer-dx .timesong {
